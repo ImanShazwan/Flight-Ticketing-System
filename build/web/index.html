@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flight Ticketing System - Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/matta-logo.jpg" rel="matta-logo">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">MATTA<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Flight</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Flight Schedule</a></li>
+              <li><a href="#">Flight Booking</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#about">Experience</a></li>
+          <li><a class="nav-link scrollto" href="#services">Promotion</a></li>
+          <li><a class="nav-link scrollto" href="#team">About Us</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#about" class="get-started-btn scrollto">Login/Sign Up</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Book Your Dream Flights Now!</h1>
+          <h2>Welcome To MATTA Flight Booking System</h2>
+        </div>
+      </div>
+      
+  <!-- ======= Form Section ======= -->       
+   <div class="wrapper">
+        <form action="#">
+            <div class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap">
+                <label class="option my-sm-0 my-2">
+                    <input type="radio" name="radio" checked>Round Trip
+                    <span class="checkmark"></span>
+                </label>
+                <label class="option my-sm-0 my-2">
+                    <input type="radio" name="radio">One Way
+                    <span class="checkmark"></span>
+                </label>
+                <div class="d-flex align-items-center my-sm-0 my-2">
+                    <a href="#" class="text-decoration-none">
+                        Multi-city/Stopovers <span class="fas fa-angle-right ps-2 text-primary"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="form-group d-sm-flex margin">
+                <div class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="text" required placeholder="From" class="form-control">
+                    <div class="label" id="from"></div>
+                    <span class="fas fa-dot-circle text-muted"></span>
+                </div>
+                <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="text" required placeholder="To" class="form-control">
+                    <div class="label" id="to"></div>
+                    <span class="fas fa-map-marker text-muted"></span>
+                </div>
+            </div>
+            <div class="form-group d-sm-flex margin">
+                <div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative">
+                    <input type="date" required placeholder="Depart Date" class="form-control">
+                    <div class="label" id="depart"></div>
+                </div>
+                <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <input type="date" required placeholder="Return Date" class="form-control">
+                    <div class="label" id="return"></div>
+                </div>
+            </div>
+            <div class="form-group border-bottom d-flex align-items-center position-relative">
+                <input type="text" required placeholder="Traveller(s)" class="form-control">
+                <div class="label" id="psngr"></div>
+                <span class="fas fa-users text-muted"></span>
+            </div>
+            <div class="form-group my-3">
+                <div class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-3">Search Flights
+                </div>
+            </div>
+        </form>
+    </div>
+  </section><!-- End Hero -->
+  
+  
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+<!--    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">  
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="">Cheap and Beneficial Air Tickets</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-calendar-todo-line"></i>
+            <h3><a href="">Our Support Lines are Open 24/7</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line"></i>
+            <h3><a href="">Convenient Payment Method For You</a></h3>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section> End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/airasia.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/mas.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/batik.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/firefly.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/malindo.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/maswings.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> 
+    <!-- ======= End Clients Section ======= -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">   
+        
+          <div class="section-title">
+          <h2>Experience</h2>
+          <p>Users' Experience</p>
+        </div>
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/experience.jpeg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bxs-plane"></i>
+              <h4>Cabin Features</h4>
+              <p>It's essential to make the passengers' journey comfortable and enjoyable such as extra legroom in premium classes and well-padded seats with adjustable headrests in economy class.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-tv"></i>
+              <h4>Inflight Entertainment</h4>
+              <p>Amazing entertainment options available such as on-demand movies, music and games accessible via personal screens. Also, onboard wifi to stay connected online throughout your flight</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-coffee"></i>
+              <h4>Dining Experiences</h4>
+              <p>High quality and variety of meals and beverages served onboard including gourmet dining options, specialty drinks and complimentary snacks available throughout the flight.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-shower"></i>
+              <h4>Pre-flight Lounge</h4>
+              <p>Enjoy a comfortable start to your journey with up to 3 hours of access to our Lounge just before your scheduled departing flight.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Promotion</h2>
+          <p>Latest Promotion</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-search"></i></div>
+              <h4><a href="">The World's Travel Search Engine</a></h4>
+              <p>You can use our search engine to find any flight you want and select a desired destination and price.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-dollar"></i></div>
+              <h4><a href="">Cheap and Beneficial Air Tickets</a></h4>
+              <p>We provide affordable tickets to the flights of almost all existing airlines so you don't need to look for them.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-credit-card"></i></div>
+              <h4><a href="">Convenient Payment Method</a></h4>
+              <p>We provide a variety of payment methods including cheque, cash, and credit cards</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Explore The World</a></h4>
+              <p>Live like a student. Travel the world like a VIP. Sign up to our student travel and lifestyle programme to enjoy amazing benefits.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-plane"></i></div>
+              <h4><a href="">Upgrade Your Cabin Class</a></h4>
+              <p>Upgrade your cabin class with MATTA. Maximise your experience on board by placing your offer with us</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Travel Experience</a></h4>
+              <p>Find out activities, attractions and more travel experiences. Earn special promotion for every booking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Need Any Help?</h3>
+          <p>Our 24/7 support operators are always ready to help you select a proper flight according to your needs.</p>
+          <a class="cta-btn" href="https://api.whatsapp.com/send?phone=60196221529" target="_blank">Get In Touch With Us</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Featured Destination Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Destinations</h2>
+          <p>Featured Destinations</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">East Malaysia</li>
+              <li data-filter=".filter-card">West Malaysia</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Semporna.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Semporna</h4>
+                <p>Sabah</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.sabahtravel.com/semporna" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Kuching.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kuching</h4>
+                <p>Sarawak</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://borneoadventure.com/blog/2019/04/things-to-do-kuching/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Pulau Redang.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pulau Redang</h4>
+                <p>Terengganu</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.redangisland.org/things-to-do-in-redang-island/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Kundasang.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kundasang</h4>
+                <p>Sabah</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://thesimpletravel.com/things-to-do-in-kundasang/#google_vignette" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Kuala Lumpur.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Kuala Lumpur</h4>
+                <p>Wilayah Persekutuan</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.hotels.com/go/malaysia/best-things-to-do-kuala-lumpur" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Bandar Melaka.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bandar Melaka</h4>
+                <p>Melaka</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.hotels.com/go/malaysia/best-things-to-do-malacca" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Pulau Langkawi.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pulau Langkawi</h4>
+                <p>Kedah</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.hotels.com/go/malaysia/best-things-to-do-langkawi" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Cameron Highlands.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cameron Highlands</h4>
+                <p>Pahang</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.hotels.com/go/malaysia/things-to-do-cameron-highlands" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destination/Pulau Besar.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Pulau Besar</h4>
+                <p>Johor</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/destination/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.caridestinasi.com/aktiviti-tempat-menarik-di-pulau-besar-mersing/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- =======End Featured Destination Section ======= -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+          <h2>Overview</h2>
+          <p>About Us</p>
+        </div>
+          
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Your Destination Awaits, Book Now</h3>
+              <p>
+                How practical is an amazing weekend break if what you really look forward is relaxing on a sandy beach? How good a great destination can be, if it’s too expensive to get there? MATTA offers an innovative and useful online experience, so you can find your perfect destination in just a couple of clicks!
+              </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Happy Customers</strong> able to experiences seamless booking services.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Clients</strong> involved in enhancing users experiences and expanding service offerings.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> with continuous improvements and best practices to meet the dynamic needs of airlines.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Awards</strong> known for its innovative, features and exceptional user experiences.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Fattah Amin.jpg" class="testimonial-img" alt="">
+                <h3>Fattah Amin</h3>
+                <h4>Celebrity</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Smooth sailing from start to finish! Booking was a breeze, and the in-flight service was top-notch. Definitely flying with them again!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Maya Karin.jpg" class="testimonial-img" alt="">
+                <h3>Maya Karin</h3>
+                <h4>Celebrity</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Great experience overall! The flight attendants were friendly and attentive, the seats were comfortable, and the in-flight entertainment kept me entertained throughout the journey.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Siti Nurhaliza.jpg" class="testimonial-img" alt="">
+                <h3>Siti Nurhaliza</h3>
+                <h4>Singer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Had a fantastic flight! The crew was professional and accommodating, and the aircraft was clean and well-maintained. Can't wait for my next trip with this airline!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Khairul Aming.jpg" class="testimonial-img" alt="">
+                <h3>Khairul Aming</h3>
+                <h4>Influencer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Impressed with the punctuality and efficiency of this airline. Despite a full flight, boarding was organized, and we departed on time. Will be recommending to friends and family!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Azfar Heri.jpg" class="testimonial-img" alt="">
+                <h3>Azfar Heri</h3>
+                <h4>Influencer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Had an amazing flight experience! The food options were great, and the complimentary amenities made the journey enjoyable. Kudos to the cabin crew for their exceptional service!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63764.01794246129!2d101.62945912167969!3d2.741747600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdbf80d4a21211%3A0x982778bb67b5fa0b!2sKuala%20Lumpur%20International%20Airport!5e0!3m2!1sen!2smy!4v1711180791302!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kuala Lumpur International Airport, 64000 Sepang, Selangor</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>matta@airline.com.my</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+60322426382</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>MATTA<span>.</span></h3>
+              <p>
+                Kuala Lumpur International Airport, <br>
+                64000 Sepang, Selangor<br><br>
+                <strong>Phone:</strong>+60322426382<br>
+                <strong>Email:</strong>matta@airline.com.my<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Flight</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Experience</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Promotion</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cabin Features</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Inflight Entertainment</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Dining Experiences</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pre-flight Lounge</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Sign up to our newsletter and be the first to know about latest news, special offers and discounts.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MATTA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
